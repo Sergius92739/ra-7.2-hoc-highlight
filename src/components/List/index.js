@@ -4,8 +4,8 @@ import Video from "../Video";
 import Article from "../Article";
 import PropTypes from 'prop-types'
 
-export default function List(props) {
-  return props.list.map(item => {
+export default function List({ list }) {
+  return list.map(item => {
     let HOCcomponent;
     switch (item.type) {
       case 'video':
